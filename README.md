@@ -20,4 +20,5 @@ Sample Usage:
 
 	sm.start();
 
-
+[![Build Status](https://secure.travis-ci.org/bpedro/pensi-scheduler.png?branch=master)](http://travis-ci.org/oocoder/pensi-scheduler)
+[![Code Climate](https://codeclimate.com/github/bpedro/pensi-scheduler.png)](https://codeclimate.com/github/oocoder/pensi-scheduler)
