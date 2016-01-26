@@ -6,6 +6,7 @@ build/Release
 node_modules
 data
 typings
+.vscode
 */bower
 .DS_Store
 
