@@ -1,4 +1,4 @@
 # Travis CI configuration file for stable Nodejs build
 language:   node_js
 node_js:
-    - "0.10"
+    - "4.2.4"
