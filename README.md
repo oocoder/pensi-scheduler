@@ -7,7 +7,7 @@ Note: the period is arbitrary, but I have only tested for hourly and daily tasks
 
 Sample Usage: 
 ```javascript
-var sched = require('./lib/pensi-scheduler');
+var sched = require('pensi-scheduler');
 	
 var TICKS_TWO_SECS = 2 * 1000;
 
