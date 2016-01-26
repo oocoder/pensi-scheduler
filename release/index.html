@@ -1,0 +1,24 @@
+<html>
+<title>Pensi Scheduler Test </title>
+<head>
+<script src="pensi-scheduler.min.js"></script>
+<script>
+window.addEventListener('load', function(){
+  // Create a daily period scheduler.
+  var sm = scheduler.create({period: 1000*5});
+
+  // Run a task only once at 8a (local) time.
+  sm.addTask('my-task');
+  sm.once('interval', function(task){
+      console.log('Task completed: ' + task.name + ', ' + new Date().toISOString());
+      sm.stop();
+  });
+  
+  console.log('start: ' + new Date().toISOString());
+  sm.start();
+});
+
+</script>
+</head>
+<body>Pensi Scheduler Test</body>
+</html>

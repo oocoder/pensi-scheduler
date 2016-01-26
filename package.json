@@ -1,7 +1,7 @@
 {
   "name": "pensi-scheduler",
   "description": "pensi-scheduler is a simple scheduler to execute recurrent tasks.  You can change the period to adjust the type of recurrence you need.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Alex R Maldonado <calidadis@gmail.com>",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "mocha -R min --timeout 5000",
-    "build": "browserify ./lib/pensi-scheduler.js | babel --presets es2015-min | uglifyjs -o ./release/pensi-scheduler.min.js"
+    "build": "browserify ./lib/pensi-scheduler.js --standalone scheduler | babel --presets es2015-min | uglifyjs -o ./release/pensi-scheduler.min.js"
   },
   "main": "./lib/pensi-scheduler.js",
   "engines": {
