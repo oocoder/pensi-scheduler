@@ -4,15 +4,13 @@ var sched = require('../lib/pensi-scheduler')
 
 describe('pensi-scheduler', function(){
 
-	it('should be able to handle interval event', function(done){
-		
-		// create a scheduler with one sec period
-		var sm = sched.create({period: 1000});	
-		sm.addTask('A', new Date()); // execute execute task after one sec.
-
+	it('should be able to handle interval events', function(done){
+		// create a two secs period scheduler
+        var sm = sched.create({period: 1000});	
+		sm.addTask('work-queue/gmail'); 
 		sm.once('interval', function(task){
 			sm.stop();			
-			assert(task.name == 'A', 'Incorrect task');
+			assert(task.name == 'work-queue/gmail', 'Incorrect task');
 			done();
 		});
 
