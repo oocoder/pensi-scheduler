@@ -1,5 +1,7 @@
-pensi-scheduler is simple scheduler for nodejs.  You can create recurrent tasks with different 
-periods.  
+
+## Pensi-Scheduler ##
+
+Is a simple event manager for nodejs.  You can create different periods to support many types of events and it only uses one setTimout.  There is only support for adding meta data for each events.
 
 Note: the period is arbitrary, but I have only tested for hourly and daily tasks.
 
